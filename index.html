@@ -13,10 +13,14 @@
     <div class="wrapper">
         <div class="header_nav_box" id="navbar">
             <div class="wrapper_menu">
-                <div class="logo">
+                <div id="logo" class="logo">
                     <a href="#header"><img src="images/logo.png" alt="minterdonate_logo"></a>
                 </div>
-                <nav>
+                <ul id="navMenuMobileRight" class="mobile-menu">
+                    <li><a href="#forWhom">Для кого?</a></li>
+                    <li><a href="#howToGet">Как получать донаты?</a></li>
+                </ul>
+                <nav id="nav-menu">
                     <ul>
                         <li><a href="#forWhom">Для кого?</a></li>
                         <li><a href="#howToGet">Как получать донаты?</a></li>
@@ -24,8 +28,20 @@
                         <li><a href="#header">Кошелек BIP Wallet</a></li>
                     </ul>
                 </nav>
-                <div class="telegram_box">
-                    <a  href="http://t.me">
+                <div id="webapp_cover">
+                    <div id="menu_button">
+                        <input type="checkbox" id="menu_checkbox">
+                        <label for="menu_checkbox" id="menu_label">
+                            <div id="menu_text_bar"></div>
+                        </label>
+                    </div>
+                </div>
+                <ul id="navMenuMobileLeft" class="mobile-menu">
+                    <li><a href="#howItWorks">Как это работает?</a></li>
+                    <li><a href="#header">Кошелек BIP Wallet</a></li>
+                </ul>
+                <div id="telegramNav" class="telegram_box">
+                    <a href="http://t.me">
                         <i class="telegram"></i>
                         <span>Подписаться на канал</span></a>
                 </div>
