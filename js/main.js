@@ -48,17 +48,29 @@ function stickyHeader() {
     }
 }
 
+
+var handleMatchMedia = function (mediaQuery) {
+        if (mediaQuery.matches) {
+            stickyHeader();
+        }
+    },
+    mql = window.matchMedia('all and (min-width: 576px)');
+
+handleMatchMedia(mql);
+mql.addListener(handleMatchMedia);
+
 function dropDownMenuHeader() {
     document.getElementById(['menu_label']).addEventListener("click", toggleClass);
-       function toggleClass(event) {
-           document.getElementById(['logo']).classList.toggle('close');
-           document.getElementById(['telegramNav']).classList.toggle('close');
+
+    function toggleClass(event) {
+        document.getElementById(['logo']).classList.toggle('close');
+        document.getElementById(['telegramNav']).classList.toggle('close');
         document.getElementById(['navMenuMobileRight']).classList.toggle('open');
         document.getElementById(['navMenuMobileLeft']).classList.toggle('open');
 
     }
 }
 
-stickyHeader();
+
 smoothScroll();
 dropDownMenuHeader();
