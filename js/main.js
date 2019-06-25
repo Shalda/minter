@@ -62,12 +62,16 @@ mql.addListener(handleMatchMedia);
 function dropDownMenuHeader() {
     document.getElementById(['menu_label']).addEventListener("click", toggleClass);
 
-    function toggleClass(event) {
-        document.getElementById(['logo']).classList.toggle('close');
-        document.getElementById(['telegramNav']).classList.toggle('close');
-        document.getElementById(['navMenuMobileRight']).classList.toggle('open');
-        document.getElementById(['navMenuMobileLeft']).classList.toggle('open');
-
+    function toggleClass() {
+        if (window.matchMedia("(min-width: 576px)").matches) {
+            document.getElementById(['logo']).classList.toggle('close');
+            document.getElementById(['telegramNav']).classList.toggle('close');
+            document.getElementById(['navMenuMobileRight']).classList.toggle('open');
+            document.getElementById(['navMenuMobileLeft']).classList.toggle('open');
+        }
+        else  {
+            document.getElementById(['nav-menu']).classList.toggle('on');
+        }
     }
 }
 
