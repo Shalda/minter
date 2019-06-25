@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>отправить донат</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="header" class="bg_dark">
+    <div class="wrapper">
+        <div id="logo" class="logo send-donate__logo">
+            <a href="#header"><img src="images/logo.png" alt="minterdonate_logo"></a>
+        </div>
+        <div class="header_main send-donate">
+            <h1>отправьте донат</h1>
+            <span class="send-donate__text" >Вы отправляете донат по ссылке:</span>
+            <a>minterdonate.com/id</a>
+            <div class="qrcode"><img src="images/QRCode.png" alt="qrcode"></div>
+            <span class="send-donate__text">Адрес кошелька BIP-Wallet</span>
+            <form id="donateForm">
+                <div role="group">
+                    <div class="form_elem"><input type="text" id="copyLink" value="minterdonate.com/">
+                        <button class="copy_link copy"></button>
+                    </div>
+                </div>
+                             </form>
+            <span class="send-donate__text"> Чтобы отправить донат, воспользуйтесь приложением BIP Wallet для <a href="#">Android,</a> <a href="#">IOS</a> или веб версией <a href="Bip.to">Bip.to</a></span>
+
+        </div>
+    </div>
+</header>
+<footer class="bg_dark">
+    <div class="wrapper lowdown">
+        <div class="footer-left">
+            <h2>Важная информация</h2>
+            <ol>
+                <li>Отправить можно ТОЛЬКО монеты блокчейна Минтер.</li>
+                <li>Отправить донат можно в любой монете блокчейна Минтер.</li>
+                <li>Минимальная сумма отправки доната равна 0.2 BIP (BIP - базовая монета Минтер)</li>
+                <li>Суммы менее 0.2 BIP будут считаться донатом в пользу сервиса Minter Donate.</li>
+                <li>Отправленные донаты возвратам не подлежат.</li>
+                <li>Скачать кошелек BIP Wallet можно по ссылкам: <a href="#">Android,</a> <a href="#">IOS,</a> <a
+                        href="#">Web версия</a>.
+                </li>
+                <li>Отправляя транзакцию Вы соглашаетесь с условиями работы сервиса Minter Donate.</li>
+                <li>Комиссия сервиса Minter Donate составляет 1% от суммы доната.</li>
+                <li>Все комиссии блокчейна Minter вычитаются из суммы доната.</li>
+            </ol>
+        </div>
+        <div class="footer-right">
+            <div class="footer-right__wrapper">
+                <div class="telegram_box">
+                    <a href=""><i class="telegram"></i> <span>Подписаться на канал</span></a>
+                </div>
+                <h3>Форма обратной связи</h3>
+                <form id="contactForm">
+                    <div class="field-block">
+                        <input id="email" class="field" name="email" required type="email" placeholder="Ваш email">
+                    </div>
+                    <div class="field-block">
+                    <textarea id="message" class="field" required name="message" rows="4"
+                              placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    <button type="submit" class="getLink-btn">отправить</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</body>
+</html>
